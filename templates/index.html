@@ -1,10 +1,28 @@
 {% extends 'base.html'%}
 
-{% Block head %}
+{% block head %}
 <title>Task Smash</title>
 {% endblock %}
 
 
-{% Block body %}
-
+{% block body %}
+<div Class="content">
+    <h1>Task Smash 2.0</h1>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Added</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td>Date</td>
+            <td>More</td>
+        </tr>
+    </table>
+    <form action="">
+        <input type="text" name="content" id="content">
+        <input type="Submit" value="Add Task" id="btn_Add">
+    </form>
+</div>
 {% endblock %}
